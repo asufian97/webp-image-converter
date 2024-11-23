@@ -1,182 +1,165 @@
- <h1>WebP Image Converter</h1>
-    <p>
-        <strong>WebP Image Converter</strong> is a simple <strong>web-based tool</strong> built using Flask to convert images between formats such as JPEG, PNG, and WebP. 
-        It supports single or multiple image conversion, with multiple images packaged as a ZIP file for easy download.
-    </p>
+# WebP Image Converter
 
-    <h2>✨ Features</h2>
-    <ul>
-        <li><strong>Convert Single or Multiple Images</strong>: Easily convert JPEG/PNG images to WebP, PNG, or JPEG.</li>
-        <li><strong>Flexible Output Settings</strong>: Adjust image dimensions (width and height) and quality.</li>
-        <li><strong>Convenient Download</strong>: Single images are downloaded directly, while multiple images are provided in a ZIP file.</li>
-        <li><strong>Image Preview</strong>: Users can preview uploaded images before converting.</li>
-    </ul>
+    **WebP Image Converter** is a simple **web-based tool** built using Flask that helps you convert images between formats such as JPEG, PNG, and WebP. It supports both single image conversion and bulk conversion, with the option to download multiple images as a ZIP file.
 
-    <h2>🛠️ Tech Stack</h2>
-    <ul>
-        <li><strong>Backend</strong>: Python 3, Flask</li>
-        <li><strong>Frontend</strong>: HTML5, CSS3, JavaScript, Bootstrap 5</li>
-        <li><strong>Dependencies</strong>: Flask, Pillow (image processing)</li>
-    </ul>
+    ## ✨ Features
 
-    <h2>🚀 Installation</h2>
-    <p>To set up the project locally, follow these steps:</p>
+    - **Convert Single or Multiple Images**: Convert JPEG/PNG images to WebP, PNG, or JPEG format with ease.
+    - **Flexible Output Settings**: Customize the image dimensions (width and height) and quality level.
+    - **Convenient Download Options**: Direct download for a single image or ZIP packaging for multiple images.
+    - **Image Preview**: Preview uploaded images before starting the conversion process.
 
-    <h3>Prerequisites</h3>
-    <ul>
-        <li>Python 3.7+</li>
-        <li><code>pip</code> (Python package installer)</li>
-        <li>Git</li>
-    </ul>
+    ## 🛠️ Tech Stack
 
-    <h3>Steps to Set Up Locally</h3>
-    <ol>
-        <li><strong>Clone the Repository</strong>:
-            <pre class="command-line">
-git clone https://github.com/asufian97/webp-image-converter.git
-            </pre>
-        </li>
-        <li><strong>Navigate to the Project Directory</strong>:
-            <pre class="command-line">
-cd webp-image-converter
-            </pre>
-        </li>
-        <li><strong>Create a Virtual Environment</strong>: It is recommended to create a virtual environment to keep dependencies isolated.
-            <pre class="command-line">
-python -m venv venv
-            </pre>
-        </li>
-        <li><strong>Activate the Virtual Environment</strong>:
-            <p><strong>Windows:</strong></p>
-            <pre class="command-line">
-venv\Scripts\activate
-            </pre>
-            <p><strong>macOS/Linux:</strong></p>
-            <pre class="command-line">
-source venv/bin/activate
-            </pre>
-        </li>
-        <li><strong>Install the Requirements</strong>: Install the necessary packages using <code>requirements.txt</code>:
-            <pre class="command-line">
-pip install -r requirements.txt
-            </pre>
-        </li>
-    </ol>
+    - **Backend**: Python 3, Flask
+    - **Frontend**: HTML5, CSS3, JavaScript, Bootstrap 5
+    - **Dependencies**: Flask, Pillow (image processing library)
 
-    <h3>Running the Application</h3>
-    <ol>
-        <li><strong>Run the Application</strong>:
-            <pre class="command-line">
-python app.py
-            </pre>
-        </li>
-        <li><strong>Access the Web App</strong>: Open your browser and go to:
-            <pre class="command-line">
-http://127.0.0.1:5000/
-            </pre>
-            <p>The web interface will allow you to upload images and convert them as needed.</p>
-        </li>
-    </ol>
+    ## 🚀 Installation
 
-    <h2>📖 Usage</h2>
-    <h3>Image Conversion</h3>
-    <ol>
-        <li><strong>Upload Images</strong>: Use the "Select Images" button to upload one or more images (JPEG/PNG).</li>
-        <li><strong>Configure Output Settings</strong>:
-            <ul>
-                <li><strong>Select Output Format</strong>: WebP, PNG, or JPEG.</li>
-                <li><strong>Adjust Dimensions (Optional)</strong>: Set width and height to resize the images.</li>
-                <li><strong>Adjust Quality (Optional)</strong>: Set the quality level (default is 80).</li>
-            </ul>
-        </li>
-        <li><strong>Preview</strong>: Uploaded images will appear as previews before conversion.</li>
-        <li><strong>Convert</strong>: Click on the "Convert" button to process and download the images.
-            <ul>
-                <li>For a single image, it will download directly.</li>
-                <li>For multiple images, the download will be in a ZIP file.</li>
-            </ul>
-        </li>
-    </ol>
+    Follow these instructions to set up the project locally.
 
-    <h2>📁 Project Structure</h2>
-    <pre>
-webp-image-converter/
-├── app.py                # Flask application logic
-├── templates/
-│   └── index.html        # Frontend HTML page for uploading images
-├── requirements.txt      # Project dependencies
-├── README.md             # Project documentation
-└── download_count.json   # (Optional) Persistent download count file
-    </pre>
+    ### Prerequisites
 
-    <h2>🧩 Dependencies</h2>
-    <ul>
-        <li><strong>Flask</strong>: For building the web server.</li>
-        <li><strong>Pillow</strong>: For handling image conversion.</li>
-        <li><strong>Bootstrap</strong>: For styling the frontend.</li>
-    </ul>
+    - Python 3.7+
+    - `pip` (Python package installer)
+    - Git
 
-    <h2>📝 Example .gitignore</h2>
-    <p>It is recommended to include the following <code>.gitignore</code> to keep unwanted files out of your repository:</p>
-    <pre>
-# Ignore virtual environments
-venv/
-.venv/
+    ### Steps to Set Up Locally
 
-# Ignore Python cache files
-__pycache__/
-*.pyc
+    1. **Clone the Repository**:
+       ```bash
+       git clone https://github.com/asufian97/webp-image-converter.git
+       ```
+    2. **Navigate to the Project Directory**:
+       ```bash
+       cd webp-image-converter
+       ```
+    3. **Create a Virtual Environment**:
+       It is recommended to create a virtual environment to isolate dependencies.
+       ```bash
+       python -m venv venv
+       ```
+    4. **Activate the Virtual Environment**:
 
-# Ignore system files
-.DS_Store
+       - **Windows**:
+         ```bash
+         venv\Scripts\activate
+         ```
+       - **macOS/Linux**:
+         ```bash
+         source venv/bin/activate
+         ```
+    5. **Install the Requirements**:
+       Install the necessary packages using `requirements.txt`:
+       ```bash
+       pip install -r requirements.txt
+       ```
 
-# Ignore IDE files
-.vscode/
-*.sublime-project
-*.sublime-workspace
-    </pre>
+    ### Running the Application
 
-    <h2>🔮 Future Improvements</h2>
-    <ul>
-        <li><strong>User Authentication</strong>: Allow users to create accounts to store their conversion history.</li>
-        <li><strong>Support for More Formats</strong>: Add support for other image formats like GIF, BMP, etc.</li>
-        <li><strong>Cloud Deployment</strong>: Deploy the app on a cloud service like Heroku or AWS.</li>
-    </ul>
+    1. **Run the Flask Application**:
+       ```bash
+       python app.py
+       ```
+    2. **Access the Web Interface**:
+       Open your browser and go to:
+       ```
+       http://127.0.0.1:5000/
+       ```
+       You can now upload images and start converting them!
 
-    <h2>🤝 Contribution</h2>
-    <p>Feel free to submit pull requests or open issues if you want to contribute to the project or suggest new features.</p>
+    ## 📖 Usage
 
-    <h3>How to Contribute</h3>
-    <ol>
-        <li><strong>Fork the Repository</strong>.</li>
-        <li><strong>Create a Feature Branch</strong>:
-            <pre class="command-line">
-git checkout -b feature-name
-            </pre>
-        </li>
-        <li><strong>Commit Your Changes</strong>:
-            <pre class="command-line">
-git commit -m 'Add some feature'
-            </pre>
-        </li>
-        <li><strong>Push to Your Branch</strong>:
-            <pre class="command-line">
-git push origin feature-name
-            </pre>
-        </li>
-        <li><strong>Create a Pull Request</strong>.</li>
-    </ol>
+    ### Image Conversion
 
-    <h2>📄 License</h2>
-    <p>
-        This project is licensed under the MIT License. You are free to use, modify, and distribute this project as long as you include the original copyright notice.
-    </p>
+    1. **Upload Images**:
+       Click on the "Select Images" button to upload one or more JPEG/PNG images.
+    2. **Configure Output Settings**:
+       - **Output Format**: Choose WebP, PNG, or JPEG.
+       - **Adjust Dimensions (Optional)**: Set desired width and height.
+       - **Adjust Quality (Optional)**: Define quality level (default is 80).
+    3. **Preview Images**:
+       Uploaded images will be displayed as a preview.
+    4. **Convert**:
+       Click on the "Convert" button:
+       - For a single image, it will download directly.
+       - For multiple images, the download will be in a ZIP file.
 
-    <h2>📬 Contact</h2>
-    <p>
-        If you have any questions or suggestions, feel free to reach out!
-    </p>
-    <ul>
-        <li><strong>GitHub</strong>: <a href="https://github.com/asufian97">asufian97</a></li>
-        <li><strong>Email</strong>: sufianwp97dot@gmail.com</li>
-    </ul>
+    ## 📁 Project Structure
+
+    ```
+    webp-image-converter/
+    ├── app.py                # Flask application logic
+    ├── templates/
+    │   └── index.html        # Frontend HTML page for uploading images
+    ├── requirements.txt      # Project dependencies
+    ├── README.md             # Project documentation
+    └── download_count.json   # (Optional) Persistent download count file
+    ```
+
+    ## 🧩 Dependencies
+
+    - **Flask**: To build the web server.
+    - **Pillow**: To handle image processing.
+    - **Bootstrap**: For frontend styling.
+
+    ## 📝 Example .gitignore
+
+    It is recommended to include the following `.gitignore` file to keep unwanted files out of your repository:
+
+    ```
+    # Ignore virtual environments
+    venv/
+    .venv/
+
+    # Ignore Python cache files
+    __pycache__/
+    *.pyc
+
+    # Ignore system files
+    .DS_Store
+
+    # Ignore IDE files
+    .vscode/
+    *.sublime-project
+    *.sublime-workspace
+    ```
+
+    ## 🔮 Future Improvements
+
+    - **User Authentication**: Allow users to create accounts to save their conversion history.
+    - **Support for More Formats**: Add additional image formats like GIF, BMP, etc.
+    - **Cloud Deployment**: Deploy the app to a cloud platform such as Heroku or AWS for easier access.
+
+    ## 🤝 Contribution
+
+    If you'd like to contribute, feel free to submit pull requests or open issues for new features or bug fixes.
+
+    ### How to Contribute
+
+    1. **Fork the Repository**.
+    2. **Create a Feature Branch**:
+       ```bash
+       git checkout -b feature-name
+       ```
+    3. **Commit Your Changes**:
+       ```bash
+       git commit -m 'Add some feature'
+       ```
+    4. **Push to Your Branch**:
+       ```bash
+       git push origin feature-name
+       ```
+    5. **Create a Pull Request**.
+
+    ## 📄 License
+
+    This project is licensed under the MIT License. You are free to use, modify, and distribute this project, provided you include the original copyright notice.
+
+    ## 📬 Contact
+
+    If you have any questions or suggestions, feel free to reach out!
+
+    - **GitHub**: [asufian97](https://github.com/asufian97)
+    - **Email**: sufianwp97dot@gmail.com
