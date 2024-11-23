@@ -122,16 +122,17 @@ Cloud Deployment: Deploy the app on a cloud service like Heroku or AWS.
 Contribution
 Feel free to submit pull requests or open issues if you want to contribute to the project or suggest new features.
 
-How to Contribute
+# How to Contribute
 Fork the Repository.
 Create a Feature Branch (git checkout -b feature-name).
 Commit Your Changes (git commit -m 'Add some feature').
 Push to Your Branch (git push origin feature-name).
 Create a Pull Request.
-License
+
+# License
 This project is licensed under the MIT License. You are free to use, modify, and distribute this project as long as you include the original copyright notice.
 
-Contact
+Contact <br>
 If you have any questions or suggestions, feel free to reach out!
 
 GitHub: asufian97 <br>
